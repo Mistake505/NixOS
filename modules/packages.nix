@@ -68,6 +68,7 @@
     capitaine-cursors
     gimp
     nautilus
+    stow 
 
     # theme
     kdePackages.qt6ct

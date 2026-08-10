@@ -69,6 +69,11 @@
     gimp
     nautilus
 
+    # theme
+    kdePackages.qt6ct
+    nwg-look
+    adw-gtk3
+
     # larp setup
     fortune
     figlet

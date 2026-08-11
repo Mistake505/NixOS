@@ -69,6 +69,7 @@
     gimp
     nautilus
     stow 
+    input-remapper
 
     # theme
     kdePackages.qt6ct

@@ -55,6 +55,7 @@
 
   programs.neovim.enable = true;
   programs.git.enable = true;
+  programs.lazygit.enable = true;
 
   environment.systemPackages = with pkgs; [
     librewolf
@@ -69,7 +70,6 @@
     gimp
     nautilus
     stow 
-    input-remapper
 
     # theme
     kdePackages.qt6ct

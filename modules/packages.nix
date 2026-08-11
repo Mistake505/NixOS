@@ -42,7 +42,7 @@
   #   xwayland.enable = true;
   # }; # enable Hyprland
   
-  programs.yazi.enable = true;
+  # programs.yazi.enable = true;
   programs.zoxide.enable = true;
 
   services.flatpak.enable = true;
@@ -60,7 +60,6 @@
   environment.systemPackages = with pkgs; [
     librewolf
     kitty
-    equibop
     dbus
     noctalia-greeter
     fetch
@@ -70,6 +69,8 @@
     gimp
     nautilus
     stow 
+    yazi
+    vesktop
 
     # theme
     kdePackages.qt6ct

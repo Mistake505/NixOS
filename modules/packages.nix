@@ -33,6 +33,10 @@
     };
   };
  
+  # services.keyd.enable = true; 
+
+
+
   programs.noctalia.enable = true;
   programs.niri.enable = true;
   # programs.mango.enable = true;
@@ -113,7 +117,7 @@
     imagemagick
     wl-clipboard
     
-    vscodium
+   # vscodium
   ];
 
   programs.fish.enable = true;

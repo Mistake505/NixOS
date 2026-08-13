@@ -10,7 +10,7 @@
     enable = true;
     gamescopeSession.enable = true;
   };
-  
+
   environment.systemPackages = with pkgs; [
     librewolf
     dbus
@@ -21,12 +21,15 @@
     gimp
     nautilus
     vesktop
-
-    # nix code
+    gnome-keyring
+    
+    # code
     nixfmt
     nixd 
-    nil 
-    
+    nil
+    luau
+    luau-lsp
+
     # theme
     kdePackages.qt6ct
     nwg-look

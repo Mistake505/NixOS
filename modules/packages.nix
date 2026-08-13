@@ -10,7 +10,7 @@
     enable = true;
     gamescopeSession.enable = true;
   };
-
+  
   environment.systemPackages = with pkgs; [
     librewolf
     dbus
@@ -25,12 +25,13 @@
     # nix code
     nixfmt
     nixd 
+    nil 
     
     # theme
     kdePackages.qt6ct
     nwg-look
     adw-gtk3
-
+    
     # Gaming
     mangohud
     protonup-ng

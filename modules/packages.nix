@@ -24,7 +24,8 @@
 
     # nix code
     nixfmt
-
+    nixd 
+    
     # theme
     kdePackages.qt6ct
     nwg-look

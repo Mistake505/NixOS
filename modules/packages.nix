@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  # when hyprland fails to build with "glaze" 
+  # when hyprland fails to build with "glaze"
   # nixpkgs.overlays = [
   #     (final: prev: {
   #       hyprland = prev.hyprland.override {
@@ -32,10 +32,8 @@
       };
     };
   };
- 
-  # services.keyd.enable = true; 
 
-
+  # services.keyd.enable = true;
 
   programs.noctalia.enable = true;
   programs.niri.enable = true;
@@ -45,12 +43,12 @@
   #   withUWSM = false;
   #   xwayland.enable = true;
   # }; # enable Hyprland
-  
+
   # programs.yazi.enable = true;
   programs.zoxide.enable = true;
 
   services.flatpak.enable = true;
-  
+
   programs.gamemode.enable = true;
   programs.steam = {
     enable = true;
@@ -61,7 +59,6 @@
     enable = true;
     defaultEditor = true;
   };
-
 
   programs.git.enable = true;
   programs.lazygit.enable = true;
@@ -77,11 +74,11 @@
     capitaine-cursors
     gimp
     nautilus
-    stow 
+    stow
     yazi
     vesktop
-    
-    # nix code 
+
+    # nix code
     nixfmt
 
     # theme
@@ -108,7 +105,7 @@
     heroic
     xwayland-satellite
     prismlauncher
-	
+
     # Dependancies LazyVim + Yazi
     luaPackages.tree-sitter-cli
     clang
@@ -124,8 +121,8 @@
     resvg
     imagemagick
     wl-clipboard
-    
-   # vscodium
+
+    # vscodium
   ];
 
   programs.fish.enable = true;
@@ -134,4 +131,3 @@
   };
 
 }
-

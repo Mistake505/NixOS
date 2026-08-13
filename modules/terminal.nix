@@ -51,4 +51,4 @@
     imagemagick
     wl-clipboard
   ];
-};
+}

@@ -38,6 +38,6 @@
     xwayland-satellite
     prismlauncher
 
-    # vscodium
+    vscodium
   ];
 }

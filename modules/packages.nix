@@ -57,7 +57,12 @@
     gamescopeSession.enable = true;
   };
 
-  programs.neovim.enable = true;
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+  };
+
+
   programs.git.enable = true;
   programs.lazygit.enable = true;
 

@@ -11,6 +11,7 @@
       ./modules/fonts.nix
       ./modules/packages.nix
       ./modules/desktop.nix
+      ./modules/terminal.nix
       <nixos-hardware/dell/precision/5820>
     ];
    

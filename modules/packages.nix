@@ -80,6 +80,9 @@
     stow 
     yazi
     vesktop
+    
+    # nix code 
+    nixfmt
 
     # theme
     kdePackages.qt6ct

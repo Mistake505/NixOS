@@ -34,6 +34,7 @@
     btop
     tree
     fetch
+    fastfetch
 
     # Dependancies LazyVim + Yazi
     luaPackages.tree-sitter-cli

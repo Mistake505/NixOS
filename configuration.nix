@@ -24,7 +24,6 @@
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  boot.initrd.luks.devices."luks-ca79c9d0-98a3-4ea8-b683-c13bf0796604".device = "/dev/disk/by-uuid/ca79c9d0-98a3-4ea8-b683-c13bf0796604";
   networking.hostName = "computer-nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 

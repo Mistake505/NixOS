@@ -22,10 +22,14 @@
     nautilus
     equibop
     gnome-keyring
-    
+
+    # [icons]
+    papirus-icon-theme
+    papirus-folders
+
     # [coding]
     # nixfmt
-    # nixd 
+    # nixd
     # nil
     # luau
     # luau-lsp
@@ -34,7 +38,7 @@
     kdePackages.qt6ct
     nwg-look
     adw-gtk3
-    
+
     # Gaming
     mangohud
     protonup-ng
@@ -44,5 +48,9 @@
     prismlauncher
 
     zed-editor
+
+    python314Packages.pygobject3
+    gtk3
+    gtk-layer-shell
   ];
 }

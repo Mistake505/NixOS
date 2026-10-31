@@ -20,15 +20,15 @@
     capitaine-cursors
     gimp
     nautilus
-    vesktop
+    equibop
     gnome-keyring
     
-    # code
-    nixfmt
-    nixd 
-    nil
-    luau
-    luau-lsp
+    # [coding]
+    # nixfmt
+    # nixd 
+    # nil
+    # luau
+    # luau-lsp
 
     # theme
     kdePackages.qt6ct
@@ -43,6 +43,6 @@
     xwayland-satellite
     prismlauncher
 
-    vscodium
+    zed-editor
   ];
 }

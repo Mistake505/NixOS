@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   programs.fish.enable = true;
@@ -19,6 +19,7 @@
 
   environment.systemPackages = with pkgs; [
     kitty
+    # alacritty
     stow
     yazi
 
@@ -32,6 +33,7 @@
     cbonsai
     cava
     btop
+    nvtopPackages.nvidia
     tree
     fetch
     fastfetch

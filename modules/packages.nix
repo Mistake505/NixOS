@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   # services.keyd.enable = true;
@@ -29,8 +29,8 @@
 
     # [coding]
     # nixfmt
-    # nixd
-    # nil
+    nixd
+    nil
     # luau
     # luau-lsp
 
@@ -42,14 +42,16 @@
     # Gaming
     mangohud
     protonup-ng
-    lutris
+    # lutris
     heroic
     xwayland-satellite
     prismlauncher
 
     zed-editor
 
+    python3
     python314Packages.pygobject3
+    python313Packages.pygobject3
     gtk3
     gtk-layer-shell
   ];

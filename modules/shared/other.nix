@@ -93,7 +93,7 @@
     # allow localsend
     allowedTCPPorts = [ 53317 ];
     allowedUDPPorts = [ 53317 ];
-  }
+  };
 
 
   # This value determines the NixOS release from which the default

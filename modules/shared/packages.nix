@@ -22,6 +22,7 @@
     nautilus
     equibop
     gnome-keyring
+    localsend
 
     # [icons]
     papirus-icon-theme

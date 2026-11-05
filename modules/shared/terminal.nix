@@ -22,6 +22,7 @@
     # alacritty
     stow
     yazi
+    pciutils
 
     # larp setup
     fortune

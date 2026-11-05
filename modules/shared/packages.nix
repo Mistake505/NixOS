@@ -11,6 +11,8 @@
     gamescopeSession.enable = true;
   };
 
+  programs.nix-ld.enable = true;
+
   environment.systemPackages = with pkgs; [
     librewolf
     dbus
@@ -29,7 +31,7 @@
     papirus-folders
 
     # [coding]
-    # nixfmt
+    nixfmt
     nixd
     nil
     # luau

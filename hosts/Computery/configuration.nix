@@ -11,6 +11,7 @@
       ../../modules/shared/packages.nix
       ../../modules/shared/desktop.nix
       ../../modules/shared/terminal.nix
+      ../../modules/shared/graphics.nix
       ../../modules/Computery/graphics.nix
     ];
 

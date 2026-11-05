@@ -12,6 +12,7 @@
       ../../modules/shared/desktop.nix
       ../../modules/shared/terminal.nix
       ../../modules/Laptopery/graphics.nix
+      ../../modules/Laptopery/laptop.nix
     ];
 
     networking.hostName = "Laptopery"; # Define your hostname.

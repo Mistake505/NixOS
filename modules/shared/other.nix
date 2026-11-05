@@ -10,7 +10,7 @@
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  networking.hostName = "Computery"; # Define your hostname.
+
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -31,23 +31,14 @@
     LC_IDENTIFICATION = "en_US.UTF-8";
     LC_MEASUREMENT = "en_US.UTF-8";
     LC_MONETARY = "en_US.UTF-8";
-    LC_NAME = "en_US.UTF-8";
+    LC_NAfalseME = "en_US.UTF-8";
     LC_NUMERIC = "en_US.UTF-8";
     LC_PAPER = "en_US.UTF-8";
     LC_TELEPHONE = "en_US.UTF-8";
     LC_TIME = "en_US.UTF-8";
   };
 
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
-  };
-  # hardware.opengl has beed changed to hardware.graphics
 
-  services.xserver.videoDrivers = ["nvidia"];
-  # services.xserver.videoDrivers = ["amdgpu"];
-
-  hardware.nvidia.modesetting.enable = true;
 
   services.printing.enable = true;
 

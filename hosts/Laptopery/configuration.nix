@@ -5,11 +5,14 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./modules/other.nix
       ./hardware-configuration.nix
-      ./modules/fonts.nix
-      ./modules/packages.nix
-      ./modules/desktop.nix
-      ./modules/terminal.nix
+      ../../modules/shared/other.nix
+      ../../modules/shared/fonts.nix
+      ../../modules/shared/packages.nix
+      ../../modules/shared/desktop.nix
+      ../../modules/shared/terminal.nix
+      ../../modules/Laptopery/graphics.nix
     ];
+
+    networking.hostName = "Laptopery"; # Define your hostname.
 }

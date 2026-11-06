@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  # when hyprland fails to build with "glaze" 
+  # when hyprland fails to build with "glaze"
   # nixpkgs.overlays = [
   #     (final: prev: {
   #       hyprland = prev.hyprland.override {
@@ -17,28 +17,35 @@
   #     })
   #   ];
 
-  services.accounts-daemon.enable = true;
+  services = {
+    accounts-daemon.enable = true;
+
+    greetd = {
+      enable = true;
+      settings = {
+        default_session = {
+          command = "/run/current-system/sw/bin/noctalia-greeter-session -- --session Niri";
+        };
+      };
+    };
+  };
 
   security.polkit = {
     enable = true;
     enablePkexecWrapper = true;
   };
 
-  services.greetd = {
-    enable = true;
-    settings = {
-      default_session = {
-        command = "/run/current-system/sw/bin/noctalia-greeter-session -- --session Niri";
-      };
-    };
+  programs = {
+    noctalia.enable = true;
+
+    niri.enable = true;
+
+    mango.enable = true;
+
+    # hyprland = {
+    #   enable = true;
+    #   withUWSM = false;
+    #   xwayland.enable = false;
+    # }; # enable Hyprland
   };
- 
-  programs.noctalia.enable = true;
-  programs.niri.enable = true;
-  programs.mango.enable = true;
-  # programs.hyprland = {
-  #   enable = true;
-  #   withUWSM = false;
-  #   xwayland.enable = true;
-  # }; # enable Hyprland
 }

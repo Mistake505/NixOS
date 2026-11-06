@@ -5,13 +5,17 @@
 
   services.flatpak.enable = true;
 
-  programs.gamemode.enable = true;
-  programs.steam = {
-    enable = true;
-    gamescopeSession.enable = true;
-  };
+  programs = {
+    nix-ld.enable = true;
 
-  programs.nix-ld.enable = true;
+    # Gaming
+    gamemode.enable = true;
+
+    steam = {
+      enable = true;
+      gamescopeSession.enable = true;
+    };
+  };
 
   environment.systemPackages = with pkgs; [
     librewolf

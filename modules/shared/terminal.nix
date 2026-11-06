@@ -1,21 +1,23 @@
 { pkgs, ... }:
 
 {
-  programs.fish.enable = true;
+  programs = {
+    fish.enable = true;
+    # yazi.enable = true;
+    zoxide.enable = true;
+
+    neovim = {
+      enable = true;
+      # defaultEditor = true;
+    };
+
+    git.enable = true;
+    lazygit.enable = true;
+  };
+
   users.extraUsers.ckjos = {
     shell = pkgs.fish;
   };
-
-  # programs.yazi.enable = true;
-  programs.zoxide.enable = true;
-
-  programs.neovim = {
-    enable = true;
-    defaultEditor = true;
-  };
-
-  programs.git.enable = true;
-  programs.lazygit.enable = true;
 
   environment.systemPackages = with pkgs; [
     kitty

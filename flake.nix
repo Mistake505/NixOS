@@ -9,24 +9,24 @@
     };
   };
 
-  outputs = { self, nixpkgs, nixos-hardware, ... }: {
+  outputs = { self, nixpkgs, nixos-hardware, ... }:
+    let
+      mkHost = modules:
+        nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          inherit modules;
+        };
+      in
+  {
     nixosConfigurations = {
-      Computery = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
+      Computery = mkHost [
+        ./hosts/Computery
+        nixos-hardware.nixosModules.dell-precision-5820
+      ];
 
-        modules = [
-          ./hosts/Computery
-          nixos-hardware.nixosModules.dell-precision-5820
-        ];
-      };
-
-      Laptopery = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-
-        modules = [
-          ./hosts/Laptopery
-        ];
-      };
+      Laptopery = mkHost [
+        ./hosts/Laptopery
+      ];
     };
   };
 }

@@ -42,10 +42,10 @@
 
     mango.enable = true;
 
-    # hyprland = {
-    #   enable = true;
-    #   withUWSM = false;
-    #   xwayland.enable = false;
-    # }; # enable Hyprland
+    hyprland = {
+      enable = true;
+      withUWSM = false;
+      xwayland.enable = false;
+    }; # enable Hyprland
   };
 }

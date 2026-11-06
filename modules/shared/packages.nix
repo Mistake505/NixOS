@@ -45,6 +45,8 @@
     kdePackages.qt6ct
     nwg-look
     adw-gtk3
+    lutgen
+    lutgen-studio
 
     # Gaming
     mangohud

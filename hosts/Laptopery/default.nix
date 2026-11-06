@@ -6,14 +6,8 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ../../modules/shared/other.nix
-      ../../modules/shared/fonts.nix
-      ../../modules/shared/packages.nix
-      ../../modules/shared/desktop.nix
-      ../../modules/shared/terminal.nix
-      ../../modules/shared/graphics.nix
-      ../../modules/Laptopery/graphics.nix
-      ../../modules/Laptopery/laptop.nix
+      ../../modules/shared
+      ../../modules/Laptopery
     ];
 
     networking.hostName = "Laptopery"; # Define your hostname.

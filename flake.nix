@@ -15,7 +15,7 @@
         system = "x86_64-linux";
 
         modules = [
-          ./hosts/Computery/configuration.nix
+          ./hosts/Computery
           nixos-hardware.nixosModules.dell-precision-5820
         ];
       };
@@ -24,7 +24,7 @@
         system = "x86_64-linux";
 
         modules = [
-          ./hosts/Laptopery/configuration.nix
+          ./hosts/Laptopery
         ];
       };
     };

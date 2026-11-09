@@ -38,14 +38,16 @@
   programs = {
     noctalia.enable = true;
 
+    umbriel.enable = true;
+
     niri.enable = true;
 
     mango.enable = true;
 
-    # hyprland = {
-    #   enable = true;
-    #   withUWSM = false;
-    #   xwayland.enable = false;
-    # }; # enable Hyprland
+    hyprland = {
+      enable = true;
+      withUWSM = false;
+      xwayland.enable = false;
+    }; # enable Hyprland
   };
 }

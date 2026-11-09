@@ -1,9 +1,12 @@
 {
-  hardware.nvidia = {
-    branch = "legacy_580";
-    open = false;
+  hardware = {
+    nvidia = {
+      branch = "legacy_580";
+      open = false;
+    };
+
+    bluetooth.enable = true;
   };
 
   services.upower.enable = true;
-  hardware.bluetooth.enable = true;
 }

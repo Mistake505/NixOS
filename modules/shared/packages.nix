@@ -6,9 +6,10 @@
   services.flatpak.enable = true;
 
   programs = {
+    thunderbird.enable = true;
     nix-ld.enable = true;
 
-    # Gaming
+    # Gamingd
     gamemode.enable = true;
 
     steam = {
@@ -30,12 +31,21 @@
     gnome-keyring
     localsend
 
+    # wget
+    # unzip
+    # cargo
+
+    # Disk Usage
+    dua
+    dust
+
     # [icons]
     papirus-icon-theme
     papirus-folders
 
     # [coding]
     nixfmt
+    statix
     nixd
     nil
     # luau

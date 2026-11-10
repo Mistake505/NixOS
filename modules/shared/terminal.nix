@@ -2,7 +2,9 @@
 
 {
   programs = {
-    tmux.enable = true;
+    # tmux.enable = true;
+
+    bat.enable = true;
 
     fish.enable = true;
     # yazi.enable = true;
@@ -92,6 +94,13 @@
     yazi
     pciutils
 
+    # term utils
+    eza
+    zellij
+    btop
+    # nvtopPackages.nvidia
+    # tree
+
     # larp setup
     fortune
     figlet
@@ -101,9 +110,6 @@
     pipes
     cbonsai
     cava
-    btop
-    nvtopPackages.nvidia
-    tree
     fetch
     fastfetch
 

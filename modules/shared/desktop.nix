@@ -50,4 +50,10 @@
       xwayland.enable = false;
     }; # enable Hyprland
   };
+
+  environment.systemPackages = with pkgs; [
+    dbus
+    noctalia-greeter
+  ];
+
 }

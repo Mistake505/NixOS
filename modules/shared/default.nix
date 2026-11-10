@@ -6,5 +6,7 @@
     ./other.nix
     ./packages.nix
     ./terminal.nix
+    ./gaming.nix
+    ./coding.nix
   ];
 }

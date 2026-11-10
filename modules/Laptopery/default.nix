@@ -1,3 +1,5 @@
+{ config, pkgs, ... }:
+
 {
   hardware = {
     nvidia = {
@@ -10,6 +12,10 @@
 
     bluetooth.enable = true;
   };
+
+  environment.systemPackages = with pkgs; [
+    nvtopPackages.nvidia
+  ];
 
   services.xserver.videoDrivers = ["nvidia"];
 

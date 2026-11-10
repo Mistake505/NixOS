@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 
 {
   hardware.nvidia = {
@@ -8,6 +8,10 @@
     modesetting.enable = true;
     nvidiaSettings = true;
   };
+
+  environment.systemPackages = with pkgs; [
+    nvtopPackages.nvidia
+  ];
 
   services.xserver.videoDrivers = ["nvidia"];
 }

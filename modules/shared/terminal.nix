@@ -4,6 +4,8 @@
   programs = {
     # tmux.enable = true;
 
+    starship.enable = true;
+
     bat.enable = true;
 
     fish.enable = true;
@@ -98,7 +100,6 @@
     eza
     zellij
     btop
-    # nvtopPackages.nvidia
     # tree
 
     # larp setup

@@ -9,6 +9,8 @@
   programs = {
     thunderbird.enable = true;
 
+    localsend.enable = true;
+
     nix-ld.enable = true;
   };
 
@@ -21,7 +23,6 @@
     nautilus
     equibop
     gnome-keyring
-    localsend
 
     # wget
     # unzip

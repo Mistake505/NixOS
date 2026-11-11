@@ -7,6 +7,8 @@
   services.flatpak.enable = true;
 
   programs = {
+    appimage.enable = true;
+
     thunderbird.enable = true;
 
     localsend = {

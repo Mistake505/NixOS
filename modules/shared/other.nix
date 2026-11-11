@@ -30,9 +30,9 @@
     firewall = {
       enable = true;
 
-      # # allow localsend
-      # allowedTCPPorts = [ 53317 ];
-      # allowedUDPPorts = [ 53317 ];
+      # allow localsend
+      allowedTCPPorts = [ 53317 ];
+      allowedUDPPorts = [ 53317 ];
     };
   };
 

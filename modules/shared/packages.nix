@@ -9,7 +9,10 @@
   programs = {
     thunderbird.enable = true;
 
-    localsend.enable = true;
+    localsend = {
+      enable = true;
+      openFirewall = true;
+    };
 
     nix-ld.enable = true;
   };

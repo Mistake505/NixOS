@@ -11,14 +11,6 @@
     fish.enable = true;
     # yazi.enable = true;
     zoxide.enable = true;
-
-    neovim = {
-      enable = true;
-      defaultEditor = true;
-    };
-
-    git.enable = true;
-    lazygit.enable = true;
   };
 
 #   console = {
@@ -113,21 +105,5 @@
     cava
     fetch
     fastfetch
-
-    # Dependancies LazyVim + Yazi
-    luaPackages.tree-sitter-cli
-    clang
-    curl
-    fzf
-    ripgrep
-    fd
-    file
-    ffmpeg
-    _7zz-rar
-    jq
-    poppler
-    resvg
-    imagemagick
-    wl-clipboard
   ];
 }

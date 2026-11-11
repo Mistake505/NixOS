@@ -11,6 +11,8 @@
     fish.enable = true;
     # yazi.enable = true;
     zoxide.enable = true;
+
+    htop.enable = true;
   };
 
 #   console = {
@@ -92,6 +94,8 @@
     eza
     zellij
     btop
+    nvtopPackages.full
+
     # tree
 
     # larp setup

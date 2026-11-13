@@ -36,7 +36,7 @@
   };
 
   programs = {
-    waybar.enable = true;
+    # waybar.enable = true;
 
     noctalia.enable = true;
 

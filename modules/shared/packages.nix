@@ -1,10 +1,15 @@
 { pkgs, ... }:
 
 {
-  # services.keyd.enable = true;
-  # services.input-remapper.enable = true;
+   services = {
+    flatpak.enable = true;
 
-  services.flatpak.enable = true;
+    libinput.enable = true;
+
+    # keyd.enable = true;
+    # input-remapper.enable = true;
+
+  };
 
   programs = {
     # appimage.enable = true;

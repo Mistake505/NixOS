@@ -36,7 +36,11 @@
   };
 
   programs = {
+    waybar.enable = true;
+
     noctalia.enable = true;
+
+    sway.enable = true;
 
     umbriel.enable = true;
 
@@ -54,6 +58,11 @@
   environment.systemPackages = with pkgs; [
     dbus
     noctalia-greeter
+
+    fuzzel
+    # swaynotificationcenter
+    # swaybg
+    wayle
   ];
 
 }

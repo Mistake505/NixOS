@@ -4,6 +4,8 @@
    services = {
     flatpak.enable = true;
 
+    gvfs.enable = true;
+
     libinput.enable = true;
 
     # keyd.enable = true;
@@ -38,6 +40,7 @@
     unzip
     # cargo
     zip
+    trash-cli
 
     # [Disk Usage]
     dua

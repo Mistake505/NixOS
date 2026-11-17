@@ -35,8 +35,9 @@
     gnome-keyring
 
     # wget
-    # unzip
+    unzip
     # cargo
+    zip
 
     # [Disk Usage]
     dua

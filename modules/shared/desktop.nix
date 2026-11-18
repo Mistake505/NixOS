@@ -36,8 +36,6 @@
   };
 
   programs = {
-    waybar.enable = true;
-
     noctalia.enable = true;
 
     sway.enable = true;
@@ -48,6 +46,8 @@
 
     mango.enable = true;
 
+    labwc.enable = true;
+
     hyprland = {
       enable = true;
       withUWSM = false;
@@ -57,6 +57,7 @@
 
   environment.systemPackages = with pkgs; [
     dbus
+    waybar
     noctalia-greeter
 
     fuzzel

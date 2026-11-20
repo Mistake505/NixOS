@@ -3,30 +3,32 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    luciole.url = "github:noctalia-dev/luciole";
     nixos-hardware = {
       url = "github:NixOS/nixos-hardware";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, nixpkgs, nixos-hardware, ... }:
+  outputs = inputs:
     let
-      mkHost = modules:
+      inherit (inputs) nixpkgs nixos-hardware;
+
+      mkHost = system: modules: specialArgs:
         nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
-          inherit modules;
+          inherit system modules specialArgs;
         };
-      in
+    in
   {
     nixosConfigurations = {
-      Computery = mkHost [
+      Computery = mkHost "x86_64-linux" [
         ./hosts/Computery
         nixos-hardware.nixosModules.dell-precision-5820
-      ];
+      ] {inherit inputs; };
 
-      Laptopery = mkHost [
+      Laptopery = mkHost "x86_64-linux" [
         ./hosts/Laptopery
-      ];
+      ] { inherit inputs; };
     };
   };
 }

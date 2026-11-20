@@ -1,7 +1,7 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
 
 {
-   services = {
+services = {
     flatpak.enable = true;
 
     gvfs.enable = true;
@@ -13,8 +13,12 @@
 
   };
 
+  imports = [ inputs.luciole.nixosModules.default ];
+
   programs = {
     # appimage.enable = true;
+
+    luciole.enable = true;
 
     thunderbird.enable = true;
 
